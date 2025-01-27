@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-stack technical marketer & website developer">
+
+
+    <script src="js/font-loader.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main-styles.min.css">
+    <title>Full-stack technical marketer & website developer</title>
+</head>
+
+<body>
+    <button class="scroll-top-button" data-js-scroll-top-button aria-label="sroll page top">
+        <span class="scroll-top-button__icon">
+            <svg viewBox="0 0 330 512" aria-hidden="true" width="20" height="20"
+			fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <use xlink:href='img/icons/icons-sprite.svg#arrow-top'></use>
+            </svg>
+        </span>
+    </button>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/" aria-label="Homepage link" class="header__logo"><img width="50" height="50"
+                        src="img/main/logo-black.png" alt="logo"></a>
+                <nav class='header-menu'>
+                    <button type="button" class="header-menu__close-menu" aria-label="close menu">
+                        <span class="header-menu__line header-menu__line-01"></span>
+                        <span class="header-menu__line header-menu__line-02"></span>
+                    </button>
+                    <ul class='header-menu__list'>
+                        <li class='header-menu__item'>
+                            <a href='#about' data-scroll-link class='header-menu__link'>about</a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='#portfolio' data-scroll-link class='header-menu__link'>portfolio</a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='#process' data-scroll-link class='header-menu__link'>process</a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='#contact' data-scroll-link class='header-menu__link'>contact me</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class='burger-menu' aria-label="open menu">
+                    <span class='burger-menu__line burger-menu__line_1'></span>
+                    <span class='burger-menu__line burger-menu__line_2'></span>
+                    <span class='burger-menu__line burger-menu__line_3'></span>
+                </button>
+            </div>
+        </header>
+        <main class="page">
+            <section class="hero" aria-labelledby="main-title">
+                <div class="hero__container">
+                    <div class="hero__info">
+                        <h1 class="hero__title title" id="main-title">
+                            <span>Full-stack</span> technical marketer & website developer
+                        </h1>
+                        <div class="hero__subtitle">
+                            Montreal-based web developer specializing in high-quality web development and on-site
+                            marketing technology to streamline
+                            your business.
+                        </div>
+                        <a href="#contact" data-scroll-link class="hero__button button">Let’s connect</a>
+                    </div>
+                    <div class="hero__decor">
+                        <img fetchpriority="high" width="615" height="615" src="img/hero/hero-decor.png"
+                            alt="hero-image">
+                    </div>
+                </div>
+            </section>
+            <section class="partners" aria-labelledby="partners-title">
+                <div class="partners__container">
+                    <h2 class="partners__title" id="partners-title">A few of the people I work with,</h2>
+                    <div class="partners__body">
+                        <div class="partners__item">
+                            <img loading="lazy" width="192" height="61" src="img/partners/partner_01.png" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img loading="lazy" width="192" height="37" src="img/partners/partner_02.png" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img loading="lazy" width="192" height="47" src="img/partners/partner_03.svg" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img loading="lazy" width="192" height="94" src="img/partners/partner_04.png" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img loading="lazy" width="192" height="35" src="img/partners/partner_05.webp"
+                                alt="partner">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews" aria-labelledby="reviews-title">
+                <div class="reviews__container">
+                    <div class="reviews__header header-reviews">
+                        <h2 class="header-reviews__title title" id="reviews-title">What <span>people</span> say about me
+                        </h2>
+                        <div class="header-reviews__nav">
+                            <button type="button" aria-label="prev-slide"
+                                class="header-reviews__button header-reviews__button-prev">
+                                <svg fill="none" height="20px" width="20px" viewBox="0 0 511.996 511.996">
+                                    <use xlink:href='img/icons/icons-sprite.svg#next-arrow'></use>
+                                </svg>
+                            </button>
+                            <button type="button" aria-label="next-slide"
+                                class="header-reviews__button header-reviews__button-next">
+                                <svg fill="none" height="20px" width="20px" viewBox="0 0 511.996 511.996">
+                                    <use xlink:href='img/icons/icons-sprite.svg#next-arrow'></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="reviews__content content-reviews">
+                        <div class="content-reviews__swiper swiper">
+                            <div class="content-reviews__wrapper swiper-wrapper">
+                                <div class="content-reviews__slide swiper-slide">
+                                    <div class="content-reviews__rating">
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="content-reviews__text">
+                                        I collaborated with Yasser on several website features and upgrades for
+                                        Thinkific, and he's an absolute delight to work with. Not only is he generous
+                                        with his technical
+                                        expertise, but he's also an amazing communicator, always dependable to keep
+                                        projects on track,
+                                        provide status updates, and deliver projects on time. We're so grateful for you!
+                                        <a class="content-reviews__link"
+                                            href="https://www.linkedin.com/in/lam-teresa/">Teresa's LinkedIn</a>
+                                    </div>
+                                    <div class="content-reviews__footer">
+                                        <div class="content-reviews__avatar">
+                                            <img src="img/reviews/avatars/avatar_01.jpeg" width="45" height="45"
+                                                loading="lazy" alt="avatar">
+                                        </div>
+                                        <div class="content-reviews__info">
+                                            <div class="content-reviews__name">Teresa Lam</div>
+                                            <div class="content-reviews__details">
+                                                <span class="content-reviews__position">Managing Editor</span>,
+                                                <span class="content-reviews__company">Thinkific</span>,
+                                                <span class="content-reviews__location">Vancouver</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-reviews__slide swiper-slide">
+                                    <div class="content-reviews__rating">
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="content-reviews__text">
+                                        Yasser is a web developer who consistently delivers exceptional work. He’s
+                                        a triple threat: his speed is impressive, always meeting deadlines, while the
+                                        quality of his
+                                        work is top-notch. But what truly sets him apart is his positive and
+                                        collaborative personality.
+                                        He’s a quiet force, with a smile and can-do attitude that are contagious, making
+                                        him a pleasure
+                                        to work with.
+                                        <a class="content-reviews__link"
+                                            href="https://www.linkedin.com/in/gablafontaine/">Gabrielle's LinkedIn</a>
+                                    </div>
+                                    <div class="content-reviews__footer">
+                                        <div class="content-reviews__avatar">
+                                            <img src="img/reviews/avatars/avatar_02.jpg" width="45" height="45"
+                                                loading="lazy" alt="avatar">
+                                        </div>
+                                        <div class="content-reviews__info">
+                                            <div class="content-reviews__name">Gabrielle Lafontaine</div>
+                                            <div class="content-reviews__details">
+                                                <span class="content-reviews__position">Head of Marketing</span>,
+                                                <span class="content-reviews__company">Unito</span>,
+                                                <span class="content-reviews__location">Montreal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-reviews__slide swiper-slide">
+                                    <div class="content-reviews__rating">
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="content-reviews__text">
+                                        Working with Yasser on my website project is an outstanding experience so
+                                        far. His expertise, creativity, and dedication to meeting my needs exceeded my
+                                        expectations.
+                                        Highly recommended for any web development needs!
+                                        <a class="content-reviews__link"
+                                            href="https://www.linkedin.com/in/maxpetroff/">Max's LinkedIn</a>
+                                    </div>
+                                    <div class="content-reviews__footer">
+                                        <div class="content-reviews__avatar">
+                                            <img src="img/reviews/avatars/avatar_03.jpeg" width="45" height="45"
+                                                loading="lazy" alt="avatar">
+                                        </div>
+                                        <div class="content-reviews__info">
+                                            <div class="content-reviews__name">Max Petroff</div>
+                                            <div class="content-reviews__details">
+                                                <span class="content-reviews__position">CoFounder &amp; BizDev</span>,
+                                                <span class="content-reviews__company">WoodRunner Games</span>,
+                                                <span class="content-reviews__location">Montreal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-reviews__slide swiper-slide">
+                                    <div class="content-reviews__rating">
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="content-reviews__text">
+                                        Yasser, you're fantastic! Your expertise in marketing and landing pages
+                                        was a game-changer to understand how to properly present my copy, and your
+                                        consultations were
+                                        spot-on. Thanks to you, we have on average 35% of visitors wanting to signup for
+                                        our services.
+                                        You also gave me prompt access to everything, allowing me time for customization
+                                        on launch day.
+                                        Finally, You tackled every challenge with a smile and infectious humor, making
+                                        the process
+                                        enjoyable. Your passion for your work truly shines through – thanks for
+                                        everything!
+                                        <a class="content-reviews__link"
+                                            href="https://www.linkedin.com/in/gumol/">Guilliano's LinkedIn</a>
+                                    </div>
+                                    <div class="content-reviews__footer">
+                                        <div class="content-reviews__avatar">
+                                            <img src="img/reviews/avatars/avatar_04.jpeg" width="45" height="45"
+                                                loading="lazy" alt="avatar">
+                                        </div>
+                                        <div class="content-reviews__info">
+                                            <div class="content-reviews__name">Guilliano Molaire</div>
+                                            <div class="content-reviews__details">
+                                                <span class="content-reviews__position">CEO</span>,
+                                                <span class="content-reviews__company">SkyCloak</span>,
+                                                <span class="content-reviews__location">Montreal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-reviews__slide swiper-slide">
+                                    <div class="content-reviews__rating">
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="content-reviews__text">
+                                        Yasser has proved to be a reliable dev to contract to. He always delivers
+                                        and has an excellent bedside manner. Working with Yasser makes me look good.
+                                        <a class="content-reviews__link"
+                                            href="https://www.linkedin.com/in/jerturowetz/">Jeremy's LinkedIn</a>
+                                    </div>
+                                    <div class="content-reviews__footer">
+                                        <div class="content-reviews__avatar">
+                                            <img src="img/reviews/avatars/avatar_05.jpeg" width="45" height="45"
+                                                loading="lazy" alt="avatar">
+                                        </div>
+                                        <div class="content-reviews__info">
+                                            <div class="content-reviews__name">Jeremy Turowetz</div>
+                                            <div class="content-reviews__details">
+                                                <span class="content-reviews__position">Senior Marketing Tech
+                                                    Lead</span>,
+                                                <span class="content-reviews__company">Unito</span>,
+                                                <span class="content-reviews__location">Montreal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-reviews__slide swiper-slide">
+                                    <div class="content-reviews__rating">
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content-reviews__rating-item _active">
+                                            <svg viewBox="0 0 46.354 46.354" fill="none" width="20" height="20">
+                                                <use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="content-reviews__text">
+                                        Yasser is our go to developer for all our web projects, big or small. He
+                                        works efficiently, provides regular communication, and produces high-quality
+                                        work.
+                                        <a class="content-reviews__link"
+                                            href="https://www.linkedin.com/in/keanenbuckley/">Keanen's LinkedIn</a>
+                                    </div>
+                                    <div class="content-reviews__footer">
+                                        <div class="content-reviews__avatar">
+                                            <img src="img/reviews/avatars/avatar_06.jpeg" width="45" height="45"
+                                                loading="lazy" alt="avatar">
+                                        </div>
+                                        <div class="content-reviews__info">
+                                            <div class="content-reviews__name">Keanen Buckley</div>
+                                            <div class="content-reviews__details">
+                                                <span class="content-reviews__position">Marketing Strategist</span>,
+                                                <span class="content-reviews__company">TheLeap</span>,
+                                                <span class="content-reviews__location">Vancouver</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="why-me" id="about" data-menu-selected-section aria-labelledby="why-me-title">
+                <div class="why-me__container">
+                    <div class="why-me__decor">
+                        <img src="img/why-me/why-me__image_01.png" width="585" height="571" loading="lazy"
+                            alt="why me image">
+                    </div>
+                    <div class="why-me__body">
+                        <h2 class="why-me__title title" id="why-me-title"><span>Why</span> work with me?</h2>
+                        <div class="why-me__subtitle">
+                            Looking for a partner who gets the big picture and the small details? Here’s what I bring to
+                            the table:
+                        </div>
+                        <ul class="why-me__list">
+                            <li class="why-me__item">
+                                <strong>Comprehensive services:</strong> Web Development (WordPress, React, Node.js,
+                                etc.), On-Site Marketing Technology Integration, SEO
+                                Optimization, E-commerce Solutions, Custom Plugin Development.
+                            </li>
+                            <li class="why-me__item">
+                                <strong>Technical expertise:</strong> Proficient in HTML, CSS, JavaScript, PHP, Python,
+                                Specialized in WordPress Development, Experience with various CMS
+                                platforms and frameworks.
+                            </li>
+                            <li class="why-me__item">
+                                <strong>Direct collaboration:</strong> No middlemen, no layers—just you and me working
+                                together to bring your vision to life.
+                            </li>
+                            <li class="why-me__item">
+                                <strong>Tailored to you:</strong> Every solution is crafted specifically for your
+                                business needs—no cookie-cutter solutions here.
+                            </li>
+                            <li class="why-me__item">
+                                <strong>Local & agile:</strong> Montreal-based, always within reach for a quick chat or
+                                coffee. Ready to move fast and adapt as your business evolves.
+                            </li>
+                        </ul>
+                        <a href="#contact" data-scroll-link class="why-me__button button">Let’s connect</a>
+                    </div>
+                </div>
+            </section>
+            <section class="projects" id="portfolio" data-menu-selected-section aria-labelledby="projects-title">
+                <div class="projects__container">
+                    <div class="projects__header header-projects">
+                        <h2 class="header-projects__title title" id="projects-title">Projects I’ve delivered</h2>
+                        <div class="header-projects__subtitle">
+                            From MVPs to full-scale platforms, I deliver tailored solutions that meet each client’s
+                            unique needs—built with care and
+                            focused on value.
+                        </div>
+                    </div>
+                    <div class="projects__cards">
+                        <article class="projects__card projects__card-back-01">
+                            <div class="projects__back ibg">
+                                <img src="img/projects/backs/projects-back__01.png" width="406" height="250"
+                                    loading="lazy" alt="projects-back">
+                            </div>
+                            <div class="projects__logo">
+                                <img src="img/projects/logos/projects-logo__01.png" width="284" height="172"
+                                    loading="lazy" alt="projects-logo">
+                            </div>
+                            <div class="projects__hover">
+                                <h3 class="projects__text"><strong>
+                                        Effortlessly start your online business with this AI
+                                        platform, simplifying product creation, sales, and delivery.
+                                    </strong></h3>
+                                <a href="https://www.theleap.co/" target="_blank" class="projects__button button">Check
+                                    it out!</a>
+                            </div>
+                        </article>
+                        <article class="projects__card projects__card-back-02">
+                            <div class="projects__back ibg">
+                                <img src="img/projects/backs/projects-back__02.png" width="406" height="250"
+                                    loading="lazy" alt="projects-back">
+                            </div>
+                            <div class="projects__logo">
+                                <img src="img/projects/logos/projects-logo__02.svg" width="273" height="87"
+                                    loading="lazy" alt="projects-logo">
+                            </div>
+                            <div class="projects__hover">
+                                <h3 class="projects__text"><strong>
+                                        Boost productivity and teamwork with seamless two-way
+                                        integrations of top business tools.
+                                    </strong></h3>
+                                <a href="https://unito.io/" target="_blank" class="projects__button button">Check it
+                                    out!</a>
+                            </div>
+                        </article>
+                        <article class="projects__card projects__card-back-03">
+                            <div class="projects__back ibg">
+                                <img src="img/projects/backs/projects-back__03.png" width="406" height="250"
+                                    loading="lazy" alt="projects-back">
+                            </div>
+                            <div class="projects__logo">
+                                <img src="img/projects/logos/projects-logo__03.webp" width="305" height="55"
+                                    loading="lazy" alt="projects-logo">
+                            </div>
+                            <div class="projects__hover">
+                                <h3 class="projects__text"><strong>All-in-one platform to create, market, and sell
+                                        online courses.</strong></h3>
+                                <a href="https://www.thinkific.com/" target="_blank"
+                                    class="projects__button button">Check it out!</a>
+                            </div>
+                        </article>
+                        <article class="projects__card projects__card-back-04">
+                            <div class="projects__back ibg">
+                                <img src="img/projects/backs/projects-back__04.png" width="406" height="250"
+                                    loading="lazy" alt="projects-back">
+                            </div>
+                            <div class="projects__logo">
+                                <img src="img/projects/logos/projects-logo__04.webp" width="305" height="58"
+                                    loading="lazy" alt="projects-logo">
+                            </div>
+                            <div class="projects__hover">
+                                <h3 class="projects__text"><strong>Managed Keycloak hosting for secure, scalable
+                                        identity management with robust support and high availability.</strong></h3>
+                                <a href="https://skycloak.io/" target="_blank" class="projects__button button">Check it
+                                    out!</a>
+                            </div>
+                        </article>
+                        <article class="projects__card projects__card-back-05">
+                            <div class="projects__back ibg">
+                                <img src="img/projects/backs/projects-back__05.png" width="406" height="250"
+                                    loading="lazy" alt="projects-back">
+                            </div>
+                            <div class="projects__logo">
+                                <img src="img/projects/logos/projects-logo__05.png" width="305" height="151"
+                                    loading="lazy" alt="projects-logo">
+                            </div>
+                            <div class="projects__hover">
+                                <h3 class="projects__text"><strong>Montreal indie game studio creating Croak, a unique
+                                        platforming adventure.</strong></h3>
+                                <a href="https://woodrunnergames.com/" target="_blank"
+                                    class="projects__button button">Check it out!</a>
+                            </div>
+                        </article>
+                        <article class="projects__card projects__card-back-06">
+                            <div class="projects__back ibg">
+                                <img src="img/projects/backs/projects-back__06.png" width="406" height="250"
+                                    loading="lazy" alt="projects-back">
+                            </div>
+                            <div class="projects__logo">
+                                <img src="img/projects/logos/projects-logo__06.png" width="220" height="220"
+                                    loading="lazy" alt="projects-logo">
+                            </div>
+                            <div class="projects__hover">
+                                <h3 class="projects__text"><strong>AI-driven financial solutions designed to simplify
+                                        and enhance financial processes and decision-making.</strong></h3>
+                                <a href="http://ezfinance.ai/" target="_blank" class="projects__button button">Check it
+                                    out!</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="collaboration-journey" id="process" data-menu-selected-section aria-labelledby="collaboration-journey-title">
+                <div class="collaboration-journey__container">
+                    <div class="collaboration-journey__header header-collaboration-journey">
+                        <h2 class="header-collaboration-journey__title title" id="collaboration-journey-title">Our collaboration journey</h2>
+                        <div class="header-collaboration-journey__subtitle">Embark on a clear and streamlined web
+                            development process with me. Here’s how we’ll bring your project from concept to
+                            reality:
+                        </div>
+                    </div>
+                    <div class="collaboration-journey__body" data-filter>
+                        <div class="collaboration-journey__nav nav-collaboration-journey">
+                            <button type="button" aria-label="Engage and plan"
+                                class="nav-collaboration-journey__item _active" data-filter-category="engage-plan">
+                                <span class="nav-collaboration-journey__icon">
+                                    <svg fill="none" viewBox="0 0 34 34" height="24" width="24">
+                                        <use xlink:href='img/icons/icons-sprite.svg#nav-collaboration-journey-01'></use>
+                                    </svg>
+                                </span>
+                                <span class="nav-collaboration-journey__text">
+                                    Engage and plan
+                                </span>
+
+                            </button>
+                            <button type="button" aria-label="Strategize and develop"
+                                class="nav-collaboration-journey__item" data-filter-category="strategize">
+                                <span class="nav-collaboration-journey__icon">
+                                    <svg fill="none" viewBox="0 0 34 34" height="24" width="24">
+                                        <use xlink:href='img/icons/icons-sprite.svg#nav-collaboration-journey-02'></use>
+                                    </svg>
+                                </span>
+                                <span class="nav-collaboration-journey__text">
+                                    Strategize and develop
+                                </span>
+
+                            </button>
+                            <button type="button" aria-label="Review and refine" class="nav-collaboration-journey__item"
+                                data-filter-category="review-refine">
+                                <span class="nav-collaboration-journey__icon">
+                                    <svg fill="none" viewBox="0 0 32 32" height="24" width="24">
+                                        <use xlink:href='img/icons/icons-sprite.svg#nav-collaboration-journey-03'></use>
+                                    </svg>
+                                </span>
+                                <span class="nav-collaboration-journey__text">
+                                    Review and refine
+                                </span>
+
+                            </button>
+                            <button type="button" aria-label="Launch and support"
+                                class="nav-collaboration-journey__item" data-filter-category="launch-support">
+                                <span class="nav-collaboration-journey__icon">
+                                    <svg fill="none" viewBox="0 0 33 33" height="24" width="24">
+                                        <use xlink:href='img/icons/icons-sprite.svg#nav-collaboration-journey-04'></use>
+                                    </svg>
+                                </span>
+                                <span class="nav-collaboration-journey__text">
+                                    Launch and support
+                                </span>
+
+                            </button>
+                        </div>
+                        <div class="collaboration-journey__content content-collaboration-journey">
+                            <article class="content-collaboration-journey__item _show"
+                                data-filter-content="engage-plan">
+                                <div class="content-collaboration-journey__info">
+                                    <h3 class="content-collaboration-journey__title">
+                                        Engage and plan
+                                    </h3>
+                                    <div class="content-collaboration-journey__subtitle">
+                                        We’ll start with a personal
+                                        call to discuss your goals and vision. I’ll tailor my approach to fit your
+                                        project’s unique
+                                        needs and help define the best path forward.
+                                    </div>
+                                    <a href="#contact" data-scroll-link
+                                        class="content-collaboration-journey__button button">
+                                        Let’s
+                                        connect
+                                    </a>
+                                </div>
+                                <div class="content-collaboration-journey__decor">
+                                    <img src="img/collaboration-journey/collaboration-journey-image_01.png" width="480"
+                                        height="318" loading="lazy" alt="collaboration-journey-image">
+                                </div>
+                            </article>
+                            <article class="content-collaboration-journey__item" data-filter-content="strategize">
+                                <div class="content-collaboration-journey__info">
+                                    <h3 class="content-collaboration-journey__title">
+                                        Strategize and develop
+                                    </h3>
+                                    <div class="content-collaboration-journey__subtitle">
+                                        I’ll map out a clear plan, from layout wireframes to content guidance. Need
+                                        expert design or copy? I’ll refer trusted
+                                        local talent. My process is flexible, adapting to your needs.
+                                    </div>
+                                    <a href="#contact" data-scroll-link
+                                        class="content-collaboration-journey__button button">
+                                        Let’s
+                                        connect
+                                    </a>
+                                </div>
+                                <div class="content-collaboration-journey__decor">
+                                    <img src="img/collaboration-journey/collaboration-journey-image_02.png" width="480"
+                                        height="358" loading="lazy" alt="collaboration-journey-image">
+                                </div>
+                            </article>
+                            <article class="content-collaboration-journey__item" data-filter-content="review-refine">
+                                <div class="content-collaboration-journey__info">
+                                    <h3 class="content-collaboration-journey__title">
+                                        Review and refine
+                                    </h3>
+                                    <div class="content-collaboration-journey__subtitle">
+                                        I create basic design mockups, and together we’ll iterate based on your
+                                        feedback. This step ensures the look and feel
+                                        align with your vision and goals.
+                                    </div>
+                                    <a href="#contact" data-scroll-link
+                                        class="content-collaboration-journey__button button">
+                                        Let’s
+                                        connect
+                                    </a>
+                                </div>
+                                <div class="content-collaboration-journey__decor">
+                                    <img src="img/collaboration-journey/collaboration-journey-image_03.png" width="406"
+                                        height="361" loading="lazy" alt="collaboration-journey-image">
+                                </div>
+                            </article>
+                            <article class="content-collaboration-journey__item" data-filter-content="launch-support">
+                                <div class="content-collaboration-journey__info">
+                                    <h3 class="content-collaboration-journey__title">
+                                        Launch and support
+                                    </h3>
+                                    <div class="content-collaboration-journey__subtitle">
+                                        I’ll bring your site to life in WordPress, optimized for ease of use. After
+                                        launch, I’m here for updates and
+                                        improvements, making sure your site grows as your business does.
+                                    </div>
+                                    <a href="#contact" data-scroll-link
+                                        class="content-collaboration-journey__button button">
+                                        Let’s
+                                        connect
+                                    </a>
+                                </div>
+                                <div class="content-collaboration-journey__decor">
+                                    <img src="img/collaboration-journey/collaboration-journey-image_04.png" width="480"
+                                        height="359" loading="lazy" alt="collaboration-journey-image">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact" data-menu-selected-section aria-labelledby="contact-title">
+                <div class="contact__container">
+                    <div class="contact__decor">
+                        <img src="img/contact/contact-image_01.png" width="550" height="663" loading="lazy"
+                            alt="contact-image">
+                    </div>
+                    <div class="contact__info">
+                        <h2 class="contact__title title" id="contact-title">Let’s connect</h2>
+                        <div class="contact__subtitle">
+                            Got a project in mind or just a question? Reach out and let’s create something great
+                            together!
+                        </div>
+                        <form action="#" class="contact__form form-contact">
+                            <input type="email" name="email" placeholder="Email" required class="form-contact__input">
+                            <textarea name="message" placeholder="Your Message Here..."
+                                class="form-contact__area"></textarea>
+                            <button class="form-contact__button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__body">
+                    <div class="footer__column">
+                        <a href="/" class="footer__logo" aria-label="homepage link">
+                            <img src="img/main/logo-white.svg" width="65" height="65" loading="lazy" alt=" logo">
+                        </a>
+                        <div class="footer__subtitle">
+                            Montreal Marketing & WordPress Consultant
+                        </div>
+                        <a href="https://www.linkedin.com/in/yasser-soliman-ba918b16b" aria-label="linkedin link"
+                            class="footer__social">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <use xlink:href='img/icons/icons-sprite.svg#social-icon_01'></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class='footer-menu'>
+                        <h2 class="footer-menu__title">Quick Links</h2>
+                        <ul class='footer-menu__list'>
+                            <li class='footer-menu__item'>
+                                <a href='#about' data-scroll-link class='footer-menu__link'>About</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#portfolio' data-scroll-link class='footer-menu__link'>Portfolio</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#process' data-scroll-link class='footer-menu__link'>Process</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#contact' data-scroll-link class='footer-menu__link'>Contact me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class='footer-menu'>
+                        <h2 class="footer-menu__title">Services</h2>
+                        <ul class='footer-menu__list'>
+                            <li class='footer-menu__item'>
+                                <a href='#' class='footer-menu__link'>Responsive Design</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#' class='footer-menu__link'>UX Optimization</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#' class='footer-menu__link'>Basic SEO</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#' class='footer-menu__link'>Support & Maintenance</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class='footer-menu'>
+                        <h2 class="footer-menu__title">Get In Touch</h2>
+                        <ul class='footer-menu__list'>
+                            <li class='footer-menu__item'>
+                                <a href="mailto:yasser@yassersoliman.com"
+                                    class='footer-menu__link footer-menu__link-doble'>
+                                    <div class="footer-menu__icon">
+                                        <svg fill="none" viewBox="0 0 22 22" height="22" width="22">
+                                            <use xlink:href='img/icons/icons-sprite.svg#mail-icon'></use>
+                                        </svg>
+                                    </div>
+                                    <span class="footer-menu__text">yasser@yassersoliman.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__copy">
+                    All Rights Reserved © 2025
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
