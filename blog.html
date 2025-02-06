@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yasser’s Blog">
+
+
+    <script src="js/font-loader.js"></script>
+    <link rel="stylesheet" href="css/main-styles.css">
+    <title>Yasser’s Blog</title>
+</head>
+
+<body>
+    <button class="scroll-top-button" data-js-scroll-top-button aria-label="sroll page top">
+        <span class="scroll-top-button__icon">
+            <svg viewBox="0 0 330 512" aria-hidden="true" width="20" height="20" fill-rule="evenodd" clip-rule="evenodd"
+                stroke-linejoin="round" stroke-miterlimit="1.414">
+                <use xlink:href='img/icons/icons-sprite.svg#arrow-top'></use>
+            </svg>
+        </span>
+    </button>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/" aria-label="Homepage link" class="header__logo"><img width="50" height="50"
+                        src="img/main/logo-black.png" alt="logo"></a>
+                <nav class='header-menu'>
+                    <button type="button" class="header-menu__close-menu" aria-label="close menu">
+                        <span class="header-menu__line header-menu__line-01"></span>
+                        <span class="header-menu__line header-menu__line-02"></span>
+                    </button>
+                    <ul class='header-menu__list'>
+                        <li class='header-menu__item'>
+                            <a href='#about' data-scroll-link class='header-menu__link'>about</a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='#portfolio' data-scroll-link class='header-menu__link'>portfolio</a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='#process' data-scroll-link class='header-menu__link'>process</a>
+                        </li>
+                        <li class='header-menu__item'>
+                            <a href='#contact' data-scroll-link class='header-menu__link'>contact me</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class='burger-menu' aria-label="open menu">
+                    <span class='burger-menu__line burger-menu__line_1'></span>
+                    <span class='burger-menu__line burger-menu__line_2'></span>
+                    <span class='burger-menu__line burger-menu__line_3'></span>
+                </button>
+            </div>
+        </header>
+        <main class="page">
+            <section class="blog-hero" aria-labelledby="blog-hero-title">
+                <div class="blog-hero__container">
+                    <div class="blog-hero__label">Yasser’s Blog</div>
+                    <h1 class="blog-hero__title" id="blog-hero-title">Web, Marketing, & Freelance Insights</h1>
+                    <div class="blog-hero__subtitle">
+                        Sharing insights on web development, marketing tech, and the freelance life. Whether you're here
+                        for practical tips or
+                        personal experiences, there's something for everyone.
+                    </div>
+                    <form action="#" class="form-blog-hero">
+                        <input id="serch-field" placeholder="Search here..." type="text" class="form-blog-hero__input">
+                        <label for="serch-field" class="form-blog-hero__label">
+                            <svg fill="#000000" height="16" width="16" viewBox="0 0 488.4 488.4" xml:space="preserve">
+                                <use xlink:href='img/icons/icons-sprite.svg#search-icon'></use>
+                            </svg>
+                        </label>
+                    </form>
+                </div>
+            </section>
+            <div class="blog-articles">
+                <div class="blog-articles__container" data-filter>
+                    <div class="nav-blog-articles">
+                        <button type="button" aria-label="filter-category" data-filter-category="all"
+                            class="nav-blog-articles__item category _active">
+                            All
+                        </button>
+                        <button type="button" aria-label="filter-category" data-filter-category="technology"
+                            class="nav-blog-articles__item category">
+                            Technology
+                        </button>
+                        <button type="button" aria-label="filter-category" data-filter-category="entrepreneurship"
+                            class="nav-blog-articles__item category">
+                            Entrepreneurship
+                        </button>
+                        <button type="button" aria-label="filter-category" data-filter-category="philosophy"
+                            class="nav-blog-articles__item category">
+                            Philosophy
+                        </button>
+                        <button type="button" aria-label="filter-category" data-filter-category="marketing"
+                            class="nav-blog-articles__item category">
+                            Marketing
+                        </button>
+                        <button type="button" aria-label="filter-category" data-filter-category="sales"
+                            class="nav-blog-articles__item category">
+                            Sales
+                        </button>
+                    </div>
+                    <div class="content-blog-articles">
+                        <article class="content-blog-articles__item _show" data-filter-content="technology">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy" alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                        <article class="content-blog-articles__item _show" data-filter-content="technology">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy"
+                                    alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                        <article class="content-blog-articles__item _show" data-filter-content="entrepreneurship">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy"
+                                    alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                        <article class="content-blog-articles__item _show" data-filter-content="entrepreneurship">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy"
+                                    alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                        <article class="content-blog-articles__item _show" data-filter-content="philosophy">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy"
+                                    alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                        <article class="content-blog-articles__item _show" data-filter-content="philosophy">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy"
+                                    alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                        <article class="content-blog-articles__item _show" data-filter-content="marketing">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy"
+                                    alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                        <article class="content-blog-articles__item _show" data-filter-content="marketing">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy"
+                                    alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                        <article class="content-blog-articles__item _show" data-filter-content="sales">
+                            <a href="" class="content-blog-articles__image ibg">
+                                <img src="img/blog-page/articles/article-image_01.jpg" width="320" height="180" loading="lazy"
+                                    alt="article-image">
+                            </a>
+                            <div class="content-blog-articles__date">
+                                <div class="content-blog-articles__icon">
+                                    <svg width="12" height="14" viewBox="0 0 12 15" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#calendar-icon'></use>
+                                    </svg>
+                                </div>
+                                <time datetime="2023-03-13" class="content-blog-articles__time">13 March 2023</time>
+                            </div>
+                            <h2 class="content-blog-articles__title">8 Rules of Travelling In Sea You Need To Know</h2>
+                            <div class="content-blog-articles__text">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                                demonstrate the visual form of a
+                                documen
+                            </div>
+                            <a href="" class="content-blog-articles__link">Read More...</a>
+                        </article>
+                    </div>
+                    <div class="blog-articles__footer">
+                        <button type="button" class="blog-articles__button button">See More</button>
+                    </div>
+                </div>
+            </div>
+            <section class="contact" id="contact" data-menu-selected-section aria-labelledby="contact-title">
+                <div class="contact__container">
+                    <div class="contact__decor">
+                        <img src="img/contact/contact-image_01.png" width="550" height="663" loading="lazy" alt="contact-image">
+                    </div>
+                    <div class="contact__info">
+                        <h2 class="contact__title title" id="contact-title">Let’s connect</h2>
+                        <div class="contact__subtitle">
+                            Got a project in mind or just a question? Reach out and let’s create something great
+                            together!
+                        </div>
+                        <form action="#" class="contact__form form-contact">
+                            <input type="email" name="email" placeholder="Email" required class="form-contact__input">
+                            <textarea name="message" placeholder="Your Message Here..." class="form-contact__area"></textarea>
+                            <button class="form-contact__button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__body">
+                    <div class="footer__column">
+                        <a href="/" class="footer__logo" aria-label="homepage link">
+                            <img src="img/main/logo-white.svg" width="65" height="65" loading="lazy" alt=" logo">
+                        </a>
+                        <div class="footer__subtitle">
+                            Montreal Marketing & WordPress Consultant
+                        </div>
+                        <a href="https://www.linkedin.com/in/yasser-soliman-ba918b16b" aria-label="linkedin link"
+                            class="footer__social">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <use xlink:href='img/icons/icons-sprite.svg#social-icon_01'></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class='footer-menu'>
+                        <h2 class="footer-menu__title">Quick Links</h2>
+                        <ul class='footer-menu__list'>
+                            <li class='footer-menu__item'>
+                                <a href='#about' data-scroll-link class='footer-menu__link'>About</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#portfolio' data-scroll-link class='footer-menu__link'>Portfolio</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#process' data-scroll-link class='footer-menu__link'>Process</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#contact' data-scroll-link class='footer-menu__link'>Contact me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class='footer-menu'>
+                        <h2 class="footer-menu__title">Services</h2>
+                        <ul class='footer-menu__list'>
+                            <li class='footer-menu__item'>
+                                <a href='#' class='footer-menu__link'>Responsive Design</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#' class='footer-menu__link'>UX Optimization</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#' class='footer-menu__link'>Basic SEO</a>
+                            </li>
+                            <li class='footer-menu__item'>
+                                <a href='#' class='footer-menu__link'>Support & Maintenance</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class='footer-menu'>
+                        <h2 class="footer-menu__title">Get In Touch</h2>
+                        <ul class='footer-menu__list'>
+                            <li class='footer-menu__item'>
+                                <a href="mailto:yasser@yassersoliman.com"
+                                    class='footer-menu__link footer-menu__link-doble'>
+                                    <div class="footer-menu__icon">
+                                        <svg fill="none" viewBox="0 0 22 22" height="22" width="22">
+                                            <use xlink:href='img/icons/icons-sprite.svg#mail-icon'></use>
+                                        </svg>
+                                    </div>
+                                    <span class="footer-menu__text">yasser@yassersoliman.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__copy">
+                    All Rights Reserved © 2025
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

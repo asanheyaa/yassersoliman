@@ -30,40 +30,49 @@ function scrollTopFunction(e) {
 	});
 }
 // swiper reviews
+
 const swiperReviewsWrapper = document.querySelector('.content-reviews__swiper');
-const swiperReviews = new Swiper(swiperReviewsWrapper, {
-	loop: true,
-	slidesPerView: 1,
-	spaceBetween: 30,
-	slidesPerGroup: 1,
-	speed: 1000,
-	autoHeight: true,
-	autoplay: {
-		delay: 5000,
-		pauseOnMouseEnter: true,
-		disableOnInteraction: false
-	},
-	navigation: {
-		nextEl: '.header-reviews__button-next',
-		prevEl: '.header-reviews__button-prev',
-	},
+let swiperReviews;
+
+try {
+
+	swiperReviews = new Swiper(swiperReviewsWrapper, {
+		loop: true,
+		slidesPerView: 1,
+		spaceBetween: 30,
+		slidesPerGroup: 1,
+		speed: 1000,
+		autoHeight: true,
+		autoplay: {
+			delay: 5000,
+			pauseOnMouseEnter: true,
+			disableOnInteraction: false
+		},
+		navigation: {
+			nextEl: '.header-reviews__button-next',
+			prevEl: '.header-reviews__button-prev',
+		},
 
 
-	breakpoints: {
+		breakpoints: {
 
-		992: {
-			slidesPerView: 2,
-			spaceBetween: 0,
-			slidesPerGroup: 2,
-			speed: 2000,
-			keyboard: true,
+			992: {
+				slidesPerView: 2,
+				spaceBetween: 0,
+				slidesPerGroup: 2,
+				speed: 2000,
+				keyboard: true,
 
 
+			}
 		}
-	}
 
 
-});
+	});
+
+}
+catch (e) { }
+
 
 
 // tabs function
@@ -79,7 +88,6 @@ function tabsFunction() {
 			filterButtons.forEach(filterButton => {
 
 				filterButton.addEventListener('click', (e) => {
-
 					filterSections.forEach(filterSection => {
 						if (filterSection.classList.contains('_show')) {
 							filterSection.classList.remove('_show')
@@ -215,7 +223,6 @@ function showScrollTopButton() {
 
 		if (scollDistance > window.innerHeight) {
 			scrollTopButton.classList.add('_show')
-			console.log(scollDistance);
 
 		} else {
 			scrollTopButton.classList.remove('_show')
