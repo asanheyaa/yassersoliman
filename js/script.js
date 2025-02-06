@@ -77,17 +77,17 @@ catch (e) { }
 
 // tabs function
 
-function tabsFunction() {
+function filterFunction() {
 	const filters = document.querySelectorAll('[data-filter]');
 
 	if (filters) {
 		filters.forEach(filter => {
-			const filterButtons = filter.querySelectorAll('[data-filter-category]'),
-				filterSections = filter.querySelectorAll('[data-filter-content]')
+			const filterButtons = filter.querySelectorAll('[data-filter-category]');
 
 			filterButtons.forEach(filterButton => {
 
 				filterButton.addEventListener('click', (e) => {
+					let filterSections = filter.querySelectorAll('[data-filter-content]')
 					filterSections.forEach(filterSection => {
 						if (filterSection.classList.contains('_show')) {
 							filterSection.classList.remove('_show')
@@ -137,7 +137,7 @@ function tabsFunction() {
 
 }
 
-tabsFunction()
+filterFunction()
 
 
 
