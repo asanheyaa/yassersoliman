@@ -71,8 +71,11 @@
                         <time class="details-article-blog__date" datetime="2022-08-20">August 20, 2022</time>
                     </div>
                     <div class="body-article-blog">
-                        <img class="body-article-blog__img" src="img/single-post-page/body-article-blog_image__01.jpg"
-                            width="1200" height="600" loading="lazy" alt="post-image">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="img/single-post-page/body-article-blog_image__01-mobile.jpg">
+                            <img class="body-article-blog__img" src="img/single-post-page/body-article-blog_image__01.jpg"
+                                width="1200" height="600" fetchpriority="high" loading="eager" alt="post-image">
+                        </picture>
                         <p class="body-article-blog__paragraph">
                             Traveling is an enriching experience that opens up new
                             horizons, exposes us to different cultures, and creates memories
