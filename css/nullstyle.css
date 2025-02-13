@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -28,14 +26,18 @@ html, body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 input, button, textarea {
   font-family: inherit;
+}
+
+textarea {
+  resize: none;
 }
 
 input::-ms-clear {
@@ -44,6 +46,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  background: transparent;
 }
 
 button::-moz-focus-inner {
@@ -65,11 +68,10 @@ ul li {
 
 img {
   vertical-align: top;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
-
-/*--------------------*/
