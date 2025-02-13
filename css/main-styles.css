@@ -1662,7 +1662,7 @@ body._lock {
 }
 
 .nav-blog-articles {
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1672,7 +1672,7 @@ body._lock {
 }
 @media (max-width: 1330px) {
   .nav-blog-articles {
-    margin-bottom: calc(30px + -14 * (100vw - 320px) / 1010);
+    margin-bottom: calc(30px + 10 * (100vw - 320px) / 1010);
   }
 }
 @media (max-width: 1330px) {
